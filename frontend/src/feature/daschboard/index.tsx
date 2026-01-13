@@ -97,7 +97,7 @@ const Dashboard = () => {
       key: "edit",
       label: "Edit",
       icon: <EditOutlined />,
-      onClick: ({ domEvent }: { domEvent: React.MouseEvent }) => {
+      onClick: ({ domEvent }) => {
         domEvent.preventDefault();
         domEvent.stopPropagation();
         openEditModal(folder);
@@ -107,7 +107,7 @@ const Dashboard = () => {
       key: "clone",
       label: "Clone",
       icon: <CopyOutlined />,
-      onClick: ({ domEvent }: { domEvent: React.MouseEvent }) => {
+      onClick: ({ domEvent }) => {
         domEvent.preventDefault();
         domEvent.stopPropagation();
         handleCloneFolder(folder.id);
@@ -118,7 +118,7 @@ const Dashboard = () => {
       label: "Delete",
       icon: <DeleteOutlined />,
       danger: true,
-      onClick: ({ domEvent }: { domEvent: React.MouseEvent }) => {
+      onClick: ({ domEvent }) => {
         domEvent.preventDefault();
         domEvent.stopPropagation();
         handleDeleteFolder(folder.id);
